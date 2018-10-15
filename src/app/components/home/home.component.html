@@ -1,5 +1,28 @@
 <div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
+  <header>
+    <nav>
+      <ul>
+        <li><img src="../../../assets/btn-min.svg" id="min" (click)="minimizeWindow()">
+        </li>
+        <li><img src="../../../assets/btn-close.svg" (click)="closeWindow()"></li>
+      </ul>
+    </nav>
+    <strong draggable="true"><span>YT</span>STAT</strong>
+  </header>
+  <input type="text" placeholder="CHANNEL USERNAME" value="UCVyRiMvfUNMA1UPlDPzG50w"
+         (keyup.enter)="channel($event.target.value)">
+
+  <main>
+    <ng-container *ngFor="let channel of channelInfo.items">
+      <figure>
+        <img [src]="channel.snippet.thumbnails.default.url">
+        <figcaption>
+          {{ channel.snippet.title }}
+        </figcaption>
+      </figure>
+      <div class="stats">
+        <strong>{{ channel.statistics.subscriberCount | number }}</strong>
+      </div>
+    </ng-container>
+  </main>
 </div>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #edb02b;
+        stroke-width: 0.5px;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        fill: #212121;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc430"/>
+      <stop offset="1" stop-color="#ffbe2e"/>
+      <stop offset="1" stop-color="#ffbd2e"/>
+    </radialGradient>
+  </defs>
+  <g id="btn-min" transform="translate(-186 -108)">
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-1" transform="translate(186 108)">
+      <circle class="cls-3" cx="10" cy="10" r="10"/>
+      <circle class="cls-4" cx="10" cy="10" r="9.75"/>
+    </g>
+    <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-2" width="12.857" height="1.429" transform="translate(189.571 117.286)"/>
+  </g>
+</svg>
